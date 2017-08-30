@@ -1,6 +1,6 @@
 import xlrd
 import numpy as np
-import xlwt
+import xlsxwriter
 
 workbook = xlrd.open_workbook('NYgas')
 sh = workbook.sheet_by_index(1)
