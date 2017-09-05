@@ -122,9 +122,9 @@ for j in range(0,12):
 MC = np.zeros((12,10))
 
 for i in range(0,12):
-    for j in range(0,10):
+    
 
-        MC[i,:] = np.random.normal(output[i,0],output[i,1],10)
+    MC[i,:] = np.random.normal(output[i,0],output[i,1],10)
         
 data = []
 
