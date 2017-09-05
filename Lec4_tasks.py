@@ -110,9 +110,6 @@ plt.ylabel('Autocorrelation',fontsize=30)
 
 #Monte Carlo function (random sampling)
 output = np.zeros((12,2))
-
-
-    
     
 for j in range(0,12):
             
@@ -128,6 +125,26 @@ for i in range(0,12):
     for j in range(0,10):
 
         MC[i,:] = np.random.normal(output[i,0],output[i,1],10)
+        
+data = []
+
+for i in range(0,12):
+    for j in range(0,10):
+        value = MC[i,j]
+        data.append(value)
+        
+
+plt.figure()
+plt.plot(data)
+plt.xlabel('Year',fontsize=15)
+plt.ylabel('Demand (MWh)',fontsize=15)
+
+#Monte Carlo autocorrelation
+plt.figure()
+autocorrelation_plot(x,data)
+
+        
+
         
         
 
