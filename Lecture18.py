@@ -73,15 +73,17 @@ B = np.array(([0,0,.75]))
 X= np.linalg.solve(A,B)
 
 
-#for an unskilled laborer:
+#Does it make sense to do this? How should we interpret the results?
 
-
-
-
-
-
-
-
-
-
+# It makes some sense to do this, because the results indicate that a
+# person is more likely to have a job as a professional than a skilled
+# or unskilled laborer, assuming that the percent likelihood of each of 
+# the jobs remains the same for future generations of each profession. By definition, 
+# the Markov chain can make predictions about a daughter's job based solely 
+# on the mother's job. Since the daughters of each mother will work in a 
+# slightly different time, the economy and job availability will be different
+# than that of the mother's time. For this reason, the results are only true 
+# if the mother and the daughter live in a steady state economy, where the 
+# proportions of professional, skilled labor, and unskilled labor jobs are 
+# steady, and the population remains proportional to the job availabilities. 
 
